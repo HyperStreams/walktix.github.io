@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WALTIX - IT Support & Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .testimonial-slide {
+      display: none;
+    }
+    .testimonial-slide.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="bg-[#f5f5f5] text-gray-900">
+  <!-- Header -->
+  <header class="bg-[#0b1e3f] text-white py-6 text-center">
+    <h1 class="text-4xl font-bold">WALTIX</h1>
+    <p class="text-lg">Technology & IT Solutions</p>
+  </header>
+
+  <!-- Who We Are -->
+  <section class="px-6 py-12 bg-white">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold text-[#0b1e3f] mb-4">Who We Are</h2>
+        <p class="text-lg">WALTIX is a trusted provider of IT services, offering tailored support, cloud solutions, cybersecurity, and more to businesses across Oxfordshire. We prioritize reliability, security, and client satisfaction in every service we deliver.</p>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/906/906334.png" alt="IT Support" class="w-48 h-48 object-contain" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Support & Services -->
+  <section class="px-6 py-12 bg-[#e9edf5]">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-[#0b1e3f] mb-8">Support & Services</h2>
+      <p class="text-lg mb-12">Offering trusted IT services for individuals and small businesses across Oxfordshire delivering reliable solutions, expert support, and peace of mind.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white border border-[#d1d5db] p-6 shadow-md transition-opacity duration-500 hover:opacity-90">
+          <h3 class="text-xl font-semibold text-[#0b1e3f] mb-2">Microsoft expertise</h3>
+          <p>Expert guidance on Microsoft 365, Azure, Intune, and more to help your business grow securely and efficiently.</p>
+        </div>
+        <div class="bg-white border border-[#d1d5db] p-6 shadow-md transition-opacity duration-500 hover:opacity-90">
+          <h3 class="text-xl font-semibold text-[#0b1e3f] mb-2">IT Support</h3>
+          <p>Comprehensive support tailored to your needs—remote or onsite—to minimize downtime and keep systems running.</p>
+        </div>
+        <div class="bg-white border border-[#d1d5db] p-6 shadow-md transition-opacity duration-500 hover:opacity-90">
+          <h3 class="text-xl font-semibold text-[#0b1e3f] mb-2">Remote Monitoring</h3>
+          <p>24/7 proactive system monitoring to detect issues early and enhance performance, reliability, and security.</p>
+        </div>
+        <div class="bg-white border border-[#d1d5db] p-6 shadow-md transition-opacity duration-500 hover:opacity-90">
+          <h3 class="text-xl font-semibold text-[#0b1e3f] mb-2">Website & Domain Management</h3>
+          <p>End-to-end support for hosting, design, domain registration, and maintenance to keep your site up-to-date and secure.</p>
+        </div>
+        <div class="bg-white border border-[#d1d5db] p-6 shadow-md transition-opacity duration-500 hover:opacity-90">
+          <h3 class="text-xl font-semibold text-[#0b1e3f] mb-2">Data Backup & Recovery</h3>
+          <p>Robust backup and recovery plans to protect your data and ensure continuity in the event of failure or loss.</p>
+        </div>
+        <div class="bg-white border border-[#d1d5db] p-6 shadow-md transition-opacity duration-500 hover:opacity-90">
+          <h3 class="text-xl font-semibold text-[#0b1e3f] mb-2">Cybersecurity Protection</h3>
+          <p>Tailored security including antivirus and firewall solutions to safeguard your data against threats.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="px-6 py-12 bg-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-[#0b1e3f] mb-8">Testimonials</h2>
+      <div class="relative">
+        <div class="testimonial-slide active">
+          <p class="text-xl font-medium text-[#0b1e3f] mb-4">“I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”</p>
+          <p class="text-sm text-red-500">Jason Strauss<br>CEO of ML Associates</p>
+        </div>
+        <div class="testimonial-slide">
+          <p class="text-xl font-medium text-[#0b1e3f] mb-4">“Fantastic service from WALTIX. They helped us migrate to the cloud smoothly and efficiently.”</p>
+          <p class="text-sm text-red-500">Sarah Lee<br>Manager, CloudTech Ltd</p>
+        </div>
+        <div class="testimonial-slide">
+          <p class="text-xl font-medium text-[#0b1e3f] mb-4">“WALTIX is our go-to for anything IT-related. Fast, reliable, and super friendly!”</p>
+          <p class="text-sm text-red-500">Tom Rains<br>Owner, Retail Hub</p>
+        </div>
+        <button onclick="changeTestimonial(-1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 text-2xl text-[#0b1e3f]">&#8592;</button>
+        <button onclick="changeTestimonial(1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 text-2xl text-[#0b1e3f]">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="px-6 py-12 bg-[#e9edf5]">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-[#0b1e3f] mb-8">Contact Us</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-3 border border-gray-300 rounded" required />
+        <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded" required />
+        <textarea placeholder="Your message" class="w-full p-3 border border-gray-300 rounded" rows="4" required></textarea>
+        <button type="submit" class="bg-[#0b1e3f] text-white px-6 py-2 rounded hover:bg-blue-900">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#0b1e3f] text-white text-center py-4">
+    <p>&copy; 2025 WALTIX. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.testimonial-slide');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) slide.classList.add('active');
+      });
+    }
+
+    function changeTestimonial(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = slides.length - 1;
+      else if (currentIndex >= slides.length) currentIndex = 0;
+      showSlide(currentIndex);
+    }
+  </script>
+</body>
+
+</html>
